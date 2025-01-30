@@ -1,0 +1,7 @@
+name : pull request review
+on : pull_request_review
+jobs : 
+  job1 : 
+    runs-on : ubuntu-latest
+    steps : 
+      - run : echo "pull_request_review"
