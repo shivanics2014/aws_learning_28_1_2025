@@ -1,6 +1,6 @@
 name : first work flow
 run-name : ${{actor.name}}
-on : issues
+on : push
 jobs : 
   job1 : 
     runs-on : ubuntu-latest
