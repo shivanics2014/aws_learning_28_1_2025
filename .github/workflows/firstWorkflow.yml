@@ -1,1 +1,8 @@
+name : first work flow
 
+on : push
+jobs :
+  job1:
+    runs-on : ubuntu-latest
+    steps :
+      - run : echo "display the workflow"
