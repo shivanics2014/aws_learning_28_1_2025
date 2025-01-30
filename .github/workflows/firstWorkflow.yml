@@ -6,3 +6,7 @@ jobs :
     runs-on : ubuntu-latest
     steps : 
       - run : echo "display the user issue message"
+  job2 : 
+    runs-on : windows-latest
+    steps : 
+      - run : echo "job 2 message"
