@@ -1,6 +1,6 @@
 name : pull request work flow
 run-name : ${{actor.name}}
-on : push
+on : pull_request
 jobs : 
   job1 : 
     runs-on : ubuntu-latest
