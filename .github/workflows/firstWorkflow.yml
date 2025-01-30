@@ -1,0 +1,12 @@
+name : first work flow
+run-name : ${{actor.name}}
+on : push
+jobs : 
+  job1 : 
+    runs-on : ubuntu-latest
+    steps : 
+      - run : echo "display the user issue message"
+  job2 : 
+    runs-on : windows-latest
+    steps : 
+      - run : echo "job 2 message"
