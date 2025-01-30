@@ -1,5 +1,4 @@
 name : pull request work flow
-run-name : ${{actor.name}}
 on : pull_request
 jobs : 
   job1 : 
