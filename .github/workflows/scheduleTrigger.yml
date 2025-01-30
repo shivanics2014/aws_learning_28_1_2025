@@ -1,0 +1,10 @@
+name: Scheduled trigger workflow
+on:
+  schedule:
+    - cron: '1 0 * * *'
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print message
+        run: echo "print after one minute"
