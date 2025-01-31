@@ -1,0 +1,15 @@
+name : Filter and activity
+
+on : 
+  pull_request : 
+    types : 
+      - open
+      - synchronised
+jobs : 
+    echo-jobs : 
+      runs-on : ubuntu-latest
+      steps : 
+        - run : echo "Print filter and activity task"
+  
+      
+    
