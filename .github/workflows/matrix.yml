@@ -1,0 +1,19 @@
+name : matrix workflow
+on : 
+  workflow_dispatch : 
+jobs : 
+    echo-matrix : 
+      runs-on : ${{matrix.os}}
+      strategy : 
+        matrix : 
+          os : 
+            - ubuntu-latest
+            - windows-latest
+      steps : 
+        - name: Setup Node.js environment
+          uses: actions/setup-node@v4.2.0
+          with:
+            node-version: ${{matrix.node-version}}
+        - run : echo "run in each os and node version ${{matrix.os}} and ${{matrix.node-version}}"    
+          
+      
