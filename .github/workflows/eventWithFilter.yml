@@ -12,7 +12,7 @@ jobs :
     echo-jobs : 
       runs-on : ubuntu-latest
       steps : 
-        - run : echo "Print filter and activity task"
+        - run : echo "Print filter and activity task1"
   
       
     
