@@ -21,5 +21,16 @@ jobs :
             echo : "Run number is ${{github.run_number}}"
             echo : "Env var value : ${{env.var}}"
             echo : "Global variable : ${{vars.MY_VAR1}}"
+            echo : "Head ref ${{github.head_ref}}"
+            echo : "workflow ref : ${{github.workflow_ref}}"
+            echo : "workflow space : ${{guthub.workspace}}"
+            echo : "triggering actor : ${{github.triggering_actor}}"
+            echo : "token : ${{github.token}}"
+            echo : "Server url : ${{github.server_url}}"
+            echo : "repository owner : ${{github.repository_owner}}"
+            echo : "ref type : ${{github.ref_type}}"
+            echo : "ref protected : ${{github.ref_protected}}"
+            echo : "job : ${{guthub.job}}"
+            echo : "event path : ${{github.event_path}}"
           env : 
                 var : 'steps'
