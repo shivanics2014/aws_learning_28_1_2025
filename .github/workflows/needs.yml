@@ -6,10 +6,12 @@ jobs :
     steps : 
       - run : echo "Builds completed"
   test : 
+    needs : build
     runs-on : ubuntu-latest
     steps : 
       - run : echo "Test completed"
   deploy : 
+    needs : [build,test]
     runs-on : ubuntu-latest
     steps : 
       - run : echo "deploy completed"
