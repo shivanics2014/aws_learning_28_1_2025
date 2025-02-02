@@ -20,5 +20,6 @@ jobs :
             echo : "Run Id is ${{github.run_id}}"
             echo : "Run number is ${{github.run_number}}"
             echo : "Env var value : ${{env.var}}"
+            echo : "Global variable : ${{vars.MY_VAR1}}"
           env : 
                 var : 'steps'
