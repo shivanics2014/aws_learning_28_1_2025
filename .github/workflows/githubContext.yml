@@ -1,4 +1,6 @@
 name : Github context
+env : 
+   var : 'workflow'
 on : 
    push : 
    workflow_dispatch : 
@@ -18,3 +20,5 @@ jobs :
             echo : "Run Id is ${{github.run_id}}"
             echo : "Run number is ${{github.run_number}}"
             echo : "Env var value : ${{env.var}}"
+            env : 
+                var : 'steps'
