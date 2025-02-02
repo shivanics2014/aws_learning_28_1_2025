@@ -10,7 +10,7 @@ jobs :
       runs-on : ubuntu-latest
       environment : ${{inputs.TARGET_ENVIRONMENT}}
       steps : 
-      - run : echo "Env var is ${{vars.DEV_VAR}}"
+      - run : echo "Dev var is ${{vars.DEV_VAR}}"
       - run : echo "Prod var is ${{vars.PROD_VAR}}"
-      - run : echo  "Secrets var is ${{secrets.SECRET_DEV}}"
+      - run : echo  "Secrets dev var is ${{secrets.SECRET_DEV}}"
       - run : echo "Secrets prod var is ${{secrets.PROD_SECRET}}"
