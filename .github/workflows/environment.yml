@@ -6,10 +6,11 @@ on :
         type : environment
         default : dev
 jobs : 
-    runs-on : ubuntu-latest
-    environment : ${{inputs.TARGET_ENVIRONMENT}}
-     steps : 
+  echo-env : 
+      runs-on : ubuntu-latest
+      environment : ${{inputs.TARGET_ENVIRONMENT}}
+      steps : 
       - run : echo "Env var is ${{vars.DEV_VAR}}"
       - run : echo "Prod var is ${{vars.PROD_VAR}}"
-      - run : echo  "Secrets var is ${{secrets.DEV_SECRETS}}"
-      - run : echo "Secrets prod var is ${{secrets.PROD_SECRETS}}"
+      - run : echo  "Secrets var is ${{secrets.DEV_SECRET}}"
+      - run : echo "Secrets prod var is ${{secrets.PROD_SECRET}}"
