@@ -13,6 +13,7 @@ jobs :
         - name : DisplayInformation
           run : |
             echo : "Event name is ${{github.event_name}}"
+            echo : "Event is : ${{github.event}}"
             echo : "Ref is ${{github.ref}}"
             echo : "SHA is ${{github.SHA}}"
             echo : "Actor is ${{github.actor}}"
