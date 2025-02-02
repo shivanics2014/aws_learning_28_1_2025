@@ -1,4 +1,5 @@
 name : Input workflow
+run-name : Inputs | debug - ${{inputs.debug}}
 on : 
   workflow_dispatch :
      inputs : 
